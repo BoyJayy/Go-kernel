@@ -5,9 +5,10 @@
 собирается под всл или линукс:
 ```make```
 ручная сборка:
+```
 cd kernel
 GOOS=linux GOARCH=386 CGO_ENABLED=0 go build -buildmode=c-archive -o ../kernel.a
-```
+
 cd ..
 
 gcc -m32 -c boot/boot.s -o boot.o
