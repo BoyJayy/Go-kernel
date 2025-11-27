@@ -3,7 +3,9 @@
 
 запуск через граб.
 собирается под всл или линукс:
-```make```
+```bash
+make
+```
 ручная сборка:
 ```bash
 cd kernel
@@ -18,6 +20,6 @@ cp kernel.elf iso/boot/
 grub-mkrescue -o go-kernel.iso iso
 ```
 если через qemu:
-```
+```bash
 qemu-system-i386 -cdrom go-kernel.iso
 ```
